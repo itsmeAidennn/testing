@@ -11,20 +11,20 @@ const MessagesBox = ({chat}) => {
   const RenderedContent = (user) => {
     if(user.msg){
       return(
-        <p className="bg-gray-200 mr-24 text-gray-700 rounded-lg py-2 px-4 botMessagePopIn">
+        <p className={style.botMessagePopIn} >
           {user.msg}
         </p>
       )
     }
     if(user.img){
       return(
-        <img className="bg-gray-200 mr-24 text-gray-700 rounded-lg py-2 px-4 botMessagePopIn" src={user.img} alt="Sent an image."></img>
+        <img className={`${style.messageContainer} ${style.botMessagePopIn}`} src={user.img} alt="Sent an image."></img>
       )
     }
   }
 
   return (
-    <div id="messagesBox" class="p-4 h-80 overflow-y-auto">
+    <div id={style.messagesBox} class="p-4 h-80 overflow-y-auto">
       {chat.map((user, key) => (
         <>
           {user.sender === 'bot' ? (
