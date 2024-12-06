@@ -1,0 +1,53 @@
+.registrarProfile{
+    width: 100vw;
+    height: 100vh;
+    max-height: 100%;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profileBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50vw;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid gainsboro;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.registrarProfile .profileBox h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.profileSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.profileSection #registrarImg{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 4px solid #21a321;
+    transition: transform 0.3s ease-in-out;
+}
+.profileSection #registrarImg:hover{
+    Transform: scale(1.1); 
+    border-radius: 0;
+
+}
+.profileSection .profileDetails p{
+    font-size: 1.2rem;
+}
+.profileSection .profileDetails{
+    border-top: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}

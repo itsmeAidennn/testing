@@ -1,0 +1,123 @@
+.updateSectionContainer{
+    position: relative;
+    background: #01280F;
+    margin: 0;
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    /* overflow: hidden; */
+    /* overflow-y: scroll; */
+}
+.updateSectionTitle{
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.updateSectionDes{
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    font-style: italic;
+}
+.updateSectionSlider{
+    width: 800px;
+    height: 300px;
+    background: #d9d9d925;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    gap: 10px;
+}
+.updateSectionContent1, .updateSectionContent2, .updateSectionContent3, .updateSectionContent4, .updateSectionContent5, .updateSectionContent6{
+    background: greenyellow;
+    font-size: 8em;
+    min-height: 260px;
+    min-width: 187.5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.updateSectionSlider::-webkit-scrollbar{
+    width: 2em;
+}
+.updateSectionSlider::-webkit-scrollbar-track{
+    background: #f4fada;
+    margin-block: .5em;
+}
+.updateSectionSlider::-webkit-scrollbar-thumb{
+    background: rgb(104, 102, 102);
+}
+.updateSectionSlider::-webkit-scrollbar-thumb:hover{
+    background: rgb(32, 34, 34)
+}
+.updateSectionBox{
+    position: absolute;
+    width: 35vw;
+    height: 40vh;
+    color: #f2f2f2;
+    background: #12413c;
+    border-radius: 10px;
+}
+.updateSectionBox, .updateSectionReq{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-style: italic;
+}
+.updateSectionBox ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    padding: 10px 40px;
+}
+.updateSectionBox li{
+    list-style-type: circle;
+}
+.listRequirements{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+/* footer{
+    background: #66B539;
+    position: relative;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    font-size: .9em;
+} */
+@media screen and (max-width: 1040px) {
+    .updateSectionSlider{
+        left: 40px;
+        top: 130px;
+        width: 405px;
+        height: 300px;
+        background: #d9d9d925;
+        overflow: hidden;
+        overflow-x: scroll;
+        padding: 10px;
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        gap: 10px;
+    }
+    .updateSectionBox{
+        position: absolute;
+        width: 80vw;
+        height: 45vh;
+        color: #f2f2f2;
+        background: #12413c;
+        border-radius: 10px;
+    }
+  }

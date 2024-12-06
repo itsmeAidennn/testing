@@ -1,0 +1,21 @@
+#loginButton {
+  height:5vh;
+  width: 8vw;
+  border: none;
+  background-color: #eee;
+  letter-spacing: .2rem;
+  font-weight: bold;
+  margin-right: .4vw;
+  color: black;
+  letter-spacing: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: .7rem;
+}
+#loginButton:hover {
+  background-color: #d9d9d9;
+}
+@media screen and (max-width: 1040px) {
+  #loginButton{
+   width: 100%;
+  }
+ }

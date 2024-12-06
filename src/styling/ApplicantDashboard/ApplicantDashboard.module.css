@@ -1,0 +1,50 @@
+/* Keyframes for Animations */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Dashboard Body */
+.DashboardBody {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  /* animation: fadeSlideIn 0.8s ease-out; */
+}
+
+/* Dashboard Body Right */
+.DashboardBodyRight {
+  height: 100%;
+  width: 100%;
+  margin-left: 18vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  /* animation: slideFromLeft 0.8s ease-out; */
+  transition: background-color 1s ease, transform 1s ease;
+}
+
+/* Hover Effect for DashboardBodyRight */
+.DashboardBodyRight:hover {
+  background-color: #222; /* Slightly lighter black */
+  /* transform: scale(1.02); */
+}

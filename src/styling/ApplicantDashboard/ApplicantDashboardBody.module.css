@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.ApplicantDashboardBody{
+    background-color:#f2f2f2;
+    width: 100%;
+    flex-grow: 1;
+    /* box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.2), inset 0px -5px 10px rgba(255, 255, 255, 0.7); */
+    box-shadow: 
+    inset 0px 5px 10px rgba(0, 0, 0, 0.2), inset 0px -5px 10px rgba(255, 255, 255, 0.7), inset 5px 0px 10px rgba(0, 0, 0, 0.15), inset -5px 0px 10px rgba(255, 255, 255, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

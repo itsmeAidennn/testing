@@ -1,0 +1,57 @@
+.registrarPendingAccounts{
+    background: #f2f2f2;
+    padding: 20px;
+    height: 100vh;
+    max-height: 100%;
+    overflow: auto;
+    overflow-y: scroll;
+}
+.registrarPendingAccounts h1{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 20px;
+}
+.registrarAccounts{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+}
+.registrarAccountsCards{
+    border: 1px solid gray;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.btnsPendingRegistrarAccounts{
+    display: flex;
+    gap: 10px;
+}
+.btnsPendingRegistrarAccounts .btnApprove{
+    padding: 10px 20px;
+    background: #4caf50;
+    color: #f2f2f2;
+    border-radius: 5px;
+}
+.btnsPendingRegistrarAccounts .btnReject{
+    padding: 10px 20px;
+    background: #ff1a1a;
+    color: #f2f2f2;
+    border-radius: 5px;
+}
+.btnsPendingRegistrarAccounts .btnApprove:hover{
+    background: #3c943f;
+
+}
+ 
+.btnsPendingRegistrarAccounts .btnReject:hover{
+    background: #d41212;
+}

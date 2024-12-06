@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@keyframes applicantProfile {
+    /* 0%{
+        transform: scale(0,0) translateX(0px);
+    } 
+    */
+    100%{
+        transform: scale(1,1) translateX(30px);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* .sidebar {
+    animation: slideIn 0.5s ease-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.item, .sideBarLinks, .depList .item {
+    animation: fadeIn 0.4s ease-out;
+    transition: all 0.3s ease-in-out;
+} */
+
+.item:hover, .sideBarLinks:hover, #depItem:hover {
+    background-color: #16471e;
+    /* animation: scaleUp 0.3s ease-in-out; */
+    text-decoration: underline;
+}
+.sidebar{
+    position: fixed;
+    background: #24562B;
+    width: 18vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.title{
+    display: flex;
+    /* justify-content: start; */
+    flex-direction: column;
+    align-items: center;
+    background: #19461A;
+    height: 8rem;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    padding: 10px;
+    gap: 10px;
+}
+.title img{
+    margin-bottom: 5px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.title label{
+    font-family: "Inter";
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    color: #fff;
+    cursor: pointer;
+}
+.itemList ul{
+    list-style-type: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+    
+}
+.itemList .item, .sideBarLinks{
+    font-family: "Inter";
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 10px 0px 10px 2%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.sideBarLinks {
+    padding: 0px 0px 0px 7px;
+}
+ .ADactive{
+    background: #113817;
+    border-radius: 10px;
+    /* transform: scale(1,1);
+    transform: translateX(30px); */
+}
+.depList ul{
+    margin: 0;
+    list-style-type: none;
+}
+.depList .item, #depItem{
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+}
+.item{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.item img{
+    width: 25px;
+    height: 25px;
+    margin-left: 5%;
+}
+.depList .item:hover{
+    background: #16471e;
+}
+
+.depList .item{
+    padding-left: 20%;
+}
+.item:hover, .sideBarLinks:hover, #depItem:hover .sidebar:hover {
+    /* animation: applicantProfile .5s  .2s ease forwards; */
+    background-color: #16471e;
+    text-decoration: underline;
+    /* color: wheat;
+     */
+}
+.socialMedia{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid white;
+}
+.socialMedia .udmLinks{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #f2f2f2;
+}
+.socialMedia .udmLinks:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.UniversalFooter{
+    background: #1e742c;
+    /* position: absolute; */
+    /* left: 250px; */
+    /* bottom: 1px; */
+    width: 100%;
+    height: 35px;
+    color: White;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 10px;
+    font-size: .9em;
+    font-family: "Inter";
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.19);
+}

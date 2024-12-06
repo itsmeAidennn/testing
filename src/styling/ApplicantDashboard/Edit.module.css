@@ -1,0 +1,134 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.documentOptions{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* flex-direction: column; */
+    gap: 50px;
+    margin-top: 20px;
+}
+.documentOptionsFront{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 400;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.documentOptionsFront p:first-of-type , .documentOptionsBack p:first-of-type{
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.documentOptionsFront p:nth-child(2) , .documentOptionsBack p:nth-child(2){
+    font-weight: 600;
+    font-size: .9em;
+}
+.documentOptionsFront .deleteBtn:first-of-type , .documentOptionsBack .deleteBtn:first-of-type{
+    background: #F12929;
+    color: #f2f2f2;
+    width: 80%;
+    height: 5.5vh;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.documentOptionsFront input[type="file"] , .documentOptionsBack input[type="file"]{
+    width: 80%;
+    margin-bottom: 10px;
+}
+.documentOptionsFront .uploadBtn:nth-last-of-type(1) , .documentOptionsBack .uploadBtn:nth-last-of-type(1){
+    background: #24562B;
+    color: #f2f2f2;
+    width: 80%;
+    height: 5.5vh;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.documentOptionsBack{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 400;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* input[type="file"] {
+    margin: 0 10px;
+} */
+
+.psaImg{
+    font-weight: 400;
+}
+.editdocumentOptions .verifyDropdown{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+.editdocumentOptions .verifyDropdown button:first-of-type{
+    width: 30%;
+    height: 5.5vh;
+    border-radius: 5px;
+    border: 2px solid black;
+} 
+.editdocumentOptions .verifyDropdown button:hover{
+    background: #e9e8e8;
+
+}
+#verifyButton{
+    width: 30%;
+    height: 5.5vh;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+#verifyButtonPSA{
+    width: 50%;
+    height: 5.5vh;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 2px solid black;
+}

@@ -1,0 +1,14 @@
+/* .container {
+  position: absolute;
+} */
+/* .containerTotalApplicants{
+  display: flex;
+  gap: 10px;
+} */
+.containerTotalApplicants h1{
+  font-size: 1em;
+}
+.containerTotalApplicants p{
+  font-weight: 600;
+  font-size: 1.8em;
+}

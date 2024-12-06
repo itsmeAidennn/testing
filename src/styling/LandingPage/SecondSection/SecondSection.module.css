@@ -1,0 +1,31 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes slideRightIn {
+  0% {
+    opacity:0;
+    transform: translateX(-110px);
+  }
+  100% {
+    opacity:1;
+    transform: translateX(0px);
+  }
+}
+
+.slideRightIn {
+  animation: slideRightIn 0.5s 1.5s backwards;
+}
+
+.secondSection {
+  background-color: white;
+  /* min-width: 760px; */
+}
+@media screen and (max-width: 1040px) {
+  .secondSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+}

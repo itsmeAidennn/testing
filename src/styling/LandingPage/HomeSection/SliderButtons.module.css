@@ -1,0 +1,125 @@
+@keyframes slideUpIn {
+  0% {
+    transform: translate(-50%, 30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 0px);
+    opacity: 1;
+  }
+}
+
+.slideUpIn {
+  animation: slideUpIn 0.5s .8s ease backwards;
+}
+
+@keyframes slideDownOut {
+  0% {
+    transform: translate(-50%, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 30px);
+    opacity: 0;
+  }
+}
+
+.slideDownOut {
+  animation: slideDownOut .5s ease forwards;
+}
+
+.sliderNav{
+  height:5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */ 
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navBtn{
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  /* outline: #1A5953; */
+  border: 1px solid #1A5953;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 1vw;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+  transition: 1s ease;
+}
+
+.activeButton {
+  background: #4CA771;
+}
+
+.hide {
+  visibility: hidden;
+}
+@media screen and (max-width: 1040px) {
+  @keyframes slideUpIn {
+    0% {
+      transform: translate(-50%, 30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, 0px);
+      opacity: 1;
+    }
+  }
+  
+  .slideUpIn {
+    animation: slideUpIn 0.5s .8s ease backwards;
+  }
+  
+  @keyframes slideDownOut {
+    0% {
+      transform: translate(-50%, 0px);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, 30px);
+      opacity: 0;
+    }
+  }
+  
+  .slideDownOut {
+    animation: slideDownOut .5s ease forwards;
+  }
+  
+  .sliderNav{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navBtn{
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    /* outline: #1A5953; */
+    border: 1px solid #1A5953;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 1vw;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+    transition: 1s ease;
+  }
+  
+  .activeButton {
+    background: #4CA771;
+  }
+  
+  .hide {
+    visibility: hidden;
+  }
+}

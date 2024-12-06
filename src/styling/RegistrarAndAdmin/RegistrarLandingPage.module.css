@@ -1,0 +1,101 @@
+@keyframes slideRightInLoginButton {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeftOutLoginButton {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideLeftInSignupButton {
+  0% {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRightOutSignupButton {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+}
+
+.slideRightInLoginButton {
+  animation: slideRightInLoginButton .5s ease backwards;
+}
+
+.slideLeftOutLoginButton {
+  animation: slideLeftOutLoginButton .5s ease forwards;
+}
+
+.slideLeftInSignupButton {
+  animation: slideLeftInSignupButton .5s ease backwards;
+}
+
+.slideRightOutSignupButton {
+  animation: slideRightOutSignupButton .5s ease forwards;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+#loginButton {
+  height:5vh;
+  width: 8vw;
+  border: none;
+  background-color: #eee;
+  letter-spacing: .2rem;
+  font-weight: bold;
+  margin-right: .4vw;
+  color: black;
+  letter-spacing: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: .7rem;
+}
+#loginButton:hover {
+  background-color: #d9d9d9;
+}
+
+#signupButton {
+  height:5vh;
+  width: 8vw;
+  background-color: transparent;
+  color: black  ;
+  border: 2px solid #eee;
+  letter-spacing: .2rem;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: .7rem;
+}
+#signupButton:hover {
+  background: #ffffff38;
+}

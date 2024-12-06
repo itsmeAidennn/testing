@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@keyframes ProfiletabList {
+    0%{
+        transform: scale(0,0) translateX(0px);
+    }
+    100%{
+        transform: scale(1,1) translateX(5px);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+profiletab {
+    animation: fadeIn 0.4s ease-out;
+    transition: all 0.3s ease-in-out;
+}
+.profiletabList:hover {
+    animation: scaleUp 0.3s ease-in-out;
+}
+.profiletab{
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 15.2vw;
+    padding: 13px 5px;
+    border-radius: 15px;
+    background-color: #FBFCF8;
+    border: 1px solid gray;
+    z-index: 9999;
+    color: #124A34;
+}
+.profiletab ul{
+    list-style-type: none;
+    padding: 0;
+}
+.profiletabList{
+    padding: 10px 26px;
+    text-align: center;
+
+}
+.profiletab a{
+    text-decoration: none;
+    /* color: black; */
+    font-family: "Inter";
+}
+/* .profiletab {
+    color: #124A34;
+    font-size: 1em;
+    padding: 2px;
+} */
+
+.profiletab::before{
+    content: '';
+    position: absolute;
+    top: -0.7rem;
+    right: 1.7rem;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: #FBFCF8;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.profiletabList:hover{
+    /* animation: ProfiletabList .5s .3s ease forwards; */
+    color:  white;
+    background-color: #113817;
+    border-radius: 15px;   
+}

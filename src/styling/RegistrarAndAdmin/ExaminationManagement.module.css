@@ -1,0 +1,55 @@
+.ExamManagementContainer{
+    background: #f2f2f2;
+    padding: 20px 300px;
+    height: 100vh;
+}
+.ExamManagementContainer h1{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 20px;
+}
+.ExamManagementBox{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.blockTabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+.tabs {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.TABSactive {
+    color: #19461A;
+    font-weight: bold;
+    border-bottom: 3px solid #32cd32;
+}
+
+.contentTabs {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.content {
+    display: none;
+    padding: 100px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.CONTENTactive {
+    display: block;
+}

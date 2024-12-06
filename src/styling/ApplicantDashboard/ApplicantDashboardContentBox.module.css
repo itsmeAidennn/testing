@@ -1,0 +1,13 @@
+.ApplicantDashboardContentBox{
+  position: absolute;
+  /* background: #009a0a1a; */
+  width: 90%;
+  height: 80%;
+  border-radius: 15px;
+  padding: 20px;
+  font-family: "Inter";
+  font-size: 1.1em;
+  font-weight: bold;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,0 +1,103 @@
+.userContainer{
+    background: #f2f2f2;
+    padding: 20px 150px;
+    height: 100vh;
+    overflow: auto;
+    overflow-y: scroll;
+}
+.userContainer h1{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 20px;
+}
+.searchWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.leftWrapper{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+.leftWrapper input[type=text]{
+    width: 100%;
+    border: 2px solid gray;
+}
+.rightWrapper{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+.rightWrapper select, .rightWrapper input[type=date]{
+    width: 100%;
+    text-align: center;
+    border: 2px solid gray;
+}
+.userSearchTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.userSearchTable th {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.userSearchTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.userSearchTable tr {
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease;
+}
+.userSearchTable tr:hover {
+    background-color: #f1f1f1;
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+.btnContainer #loadMoreUserBtn{
+    width: 20vw;
+    background: #4caf50;
+    color: #f2f2f2;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btnContainer #loadMoreUserBtn:hover{
+    background: #3c943f;
+}
+.userProfileContainer{
+    padding: 10px 60px;
+}
+.userProfileContainer h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+/* .userProfileContainer p{
+    font-weight: bold;
+} */
+.oneLine{
+    display: flex;
+    gap: 5px;
+}
+.userProfileContainer h3{
+    font-weight: bold;
+}

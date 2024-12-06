@@ -1,0 +1,128 @@
+@keyframes slideUpInLogin {
+  0% {
+    transform: translate(50%, -50%) translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(50%, -50%) translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDownOutLogin {
+  0% {
+    transform: translate(50%, -50%) translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(50%, -50%) translateY(50px);
+    opacity: 0;
+  }
+}
+
+.slideUpInLogin {
+  animation: slideUpInLogin .5s 0.5s ease backwards;
+}
+
+.slideDownOutLogin {
+  animation: slideDownOutLogin .5s ease forwards;
+}
+
+.loginAndSignupBox {
+  /* height: 30vh; */
+  width: 30vw;
+  padding: 20px 55px 30px 55px;
+  background-color: #fff;
+  border: 1px solid white;
+  border-radius: 5px;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  /* box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, .5) 0px 30px 60px -30px, rgba(10, 37, 64, .5) 0px -2px 6px 0px inset; */
+}
+
+.titleLoginAndSignup {
+  margin: 2vh 0vw;
+}
+.titleLoginAndSignup h1{
+  font-size: 2vw;
+  font-weight: bold;
+  color: black;
+}
+
+.titleLoginAndSignup p{
+  font-size: 1vw;
+  color: #8D8D8D;
+}
+
+.closeButton {
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  top:5px;
+  right: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textFields {
+  height: 5vh;
+  width: 22vw;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgba(0, 0, 0, 0.397);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 0px 10px;
+  font-size: 14px;
+  color: black;
+}
+.textFields:focus {
+  outline: none;
+  border: 2px solid black;
+}
+
+.submitButton{
+  font-size: .8em;
+  width: 22vw;
+  height: 2.2rem;
+  border-radius: 8px;
+  color: white;
+  background: #1A5953;
+}
+.submitButton:hover{
+  background: #12413c;
+}
+
+.options {
+  width: 100%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5vh 0vw 1.5vh 0vw;
+  color: black;
+}
+
+.twoButtonContainer {
+  width: 22vw;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hide {
+  visibility: hidden;
+}
+.form{
+  padding-bottom: 15px;
+}
+/* .errorField {
+  border: 1px solid red;
+} */
+ @media screen and (max-width: 1040px) {
+
+}

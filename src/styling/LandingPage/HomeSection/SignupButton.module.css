@@ -1,0 +1,19 @@
+#signupButton {
+  height:5vh;
+  width: 8vw;
+  background-color: transparent;
+  color: #eee;
+  border: 2px solid #eee;
+  letter-spacing: .2rem;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: .7rem;
+}
+#signupButton:hover {
+  background: #ffffff38;
+}
+@media screen and (max-width: 1040px) {
+  #signupButton{
+   width: 100%;
+  }
+ }

@@ -1,0 +1,137 @@
+.scheduleContainer{
+    background: #f2f2f2;
+    padding: 20px 100px;
+    height: 100vh;
+    max-height: 100%;
+    overflow: auto;
+    overflow-y: scroll;
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+.btnContainer #loadMorebtn{
+    width: 20vw;
+    background: #4caf50;
+    color: #f2f2f2;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btnContainer #loadMorebtn:hover{
+    background: #3c943f;
+}
+.scheduleContainer h1{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 20px;
+}
+.searchWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.leftWrapper{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+.leftWrapper input[type=text]{
+    width: 100%;
+    border: 2px solid gray;
+}
+.rightWrapper{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+.rightWrapper select, .rightWrapper input[type=date]{
+    width: 100%;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.scheduleSearchTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.scheduleSearchTable th {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.scheduleSearchTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.scheduleSearchTable tr {
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease;
+}
+
+.scheduleSearchTable tr:hover {
+    background-color: #f1f1f1;
+}
+.documentsContainer{
+    text-align: center;
+    padding: 10px 30px;
+    overflow: auto;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+.documentsContainer h2{
+    font-size: 1.5em;
+}
+.documentsContainer h4{
+    font-size: 1.2em;
+}
+.documentsContainer li{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0 20px;
+}
+.btns #btnAccept{
+    width: 100%;
+    height: 4.5vh;
+    background: #4caf50;
+    color: #f2f2f2;
+    border-radius: 5px;
+}
+.btns #btnReject{
+    width: 100%;
+    height: 4.5vh;
+    background: #ff1a1a;
+    color: #f2f2f2;
+    border-radius: 5px;
+}
+.btns #btnAccept:hover{
+    background: #3c943f;
+
+}
+ 
+.btns #btnReject:hover{
+    background: #d41212;
+}
+

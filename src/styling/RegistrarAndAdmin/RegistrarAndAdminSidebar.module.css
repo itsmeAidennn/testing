@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@keyframes slideLeftIn {
+    0%{
+        transform: translateX(-100%);
+    } 
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideRightOut {
+    0%{
+        transform: translateX(0px);
+    } 
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.slideLeftIn {
+    animation: slideLeftIn 0.5s ease backwards;
+}
+
+.slideRightOut {
+    animation: slideRightOut 0.5s ease forwards;
+}
+
+.sidebar{
+    position: fixed;
+    background: #24562B;
+    width: 20vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 999;
+}
+.title{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    background: #19461A;
+    height: 100px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menuLogo {
+    position: absolute;
+    right: -22%;
+    width: 50px;
+    height: 50px;
+}
+.title .homeDashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title .homeDashboard img{
+    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.title .homeDashboard label{
+    font-family: "Inter";
+    font-size: 1em;
+    /* font-weight: bold; */
+    color: #fff;
+    cursor: pointer;
+}
+.itemList ul{
+    list-style-type: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+    
+}
+.itemList .item, .sideBarLinks{
+    font-family: "Inter";
+    color: #f2f2f2;
+    text-decoration: none;
+    display: flex;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.sideBarLinks {
+    padding: 0px 0px 0px 7px;
+}
+ .ADactive{
+    background: #113817;
+    border-radius: 10px;
+    /* transform: scale(1,1);
+    transform: translateX(30px); */
+}
+.depList ul{
+    margin: 0;
+    list-style-type: none;
+}
+.depList .item, #depItem{
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 300;
+    /* display: flex; */
+}
+.item{
+    display: flex;
+    /* align-items: center; */
+    font-weight: bold;
+}
+.item img{
+    width: 25px;
+    height: 25px;
+    margin-left: 5%;
+}
+.depList .item:hover{
+    background: #16471e;
+}
+
+.depList .item{
+    padding-left: 20%;
+}
+.item:hover, .sideBarLinks:hover, #depItem:hover .sidebar:hover {
+    /* animation: applicantProfile .5s  .2s ease forwards; */
+    background-color: #16471e;
+    text-decoration: underline;
+    /* color: wheat;
+     */
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid white;   
+    cursor: pointer; 
+    height: 8vh;
+
+}
+.buttonContainer:hover{
+    background: #16471e;
+}
+.buttonContainer img{
+    width: 40px;
+    height: 40px;
+}
+.logoutButton {
+    letter-spacing: .2rem;
+    font-weight: bold;
+    color: #f2f2f2;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    padding: 10px;
+  }

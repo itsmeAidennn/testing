@@ -1,0 +1,27 @@
+.secondSectionBody {
+  justify-content: space-between;
+  padding: 0vh 5vw 5vh 5vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  flex-wrap: wrap;
+}
+
+.titleSecondSection {
+  font-weight: 700;
+}
+.box {
+  /* background-color: aliceblue; */
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 1040px) {
+  .secondSectionBody {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    width: 100%;
+    gap: 10px;
+  }
+}
+
+

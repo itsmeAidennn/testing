@@ -1,0 +1,65 @@
+@keyframes imageUncover {
+  0% {
+    clip-path: circle(0% at 0% 50%);
+  }
+  100% {
+    clip-path: circle(150% at 0% 50%);
+
+  }
+}
+
+@keyframes imageCover {
+  0% {
+    clip-path: circle(150% at 0% 50%);
+  }
+  100% {
+    clip-path: circle(0% at 0% 50%);
+  }
+}
+
+.imageCover {
+  animation: imageCover .7s ease forwards;
+}
+
+.imageUncover {
+  animation: imageUncover .7s ease backwards;
+}
+
+.imgSlide {
+  min-height: 100vh;
+  width: 100%; 
+  position: relative;
+  z-index: -2;
+  /* filter: blur(5px); */
+}
+@media screen and (max-width: 1040px) {
+  @keyframes imageUncover {
+    0% {
+      clip-path: circle(0% at 0% 50%);
+    }
+    100% {
+      clip-path: circle(150% at 0% 50%);
+  
+    }
+  }
+  
+  @keyframes imageCover {
+    0% {
+      clip-path: circle(150% at 0% 50%);
+    }
+    100% {
+      clip-path: circle(0% at 0% 50%);
+    }
+  }
+  
+  .imageCover {
+    animation: imageCover .7s ease forwards;
+  }
+  
+  .imageUncover {
+    animation: imageUncover .7s ease backwards;
+  }
+  .imgSlide {
+    object-fit: cover;
+  }
+}

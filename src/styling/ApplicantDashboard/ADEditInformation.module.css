@@ -1,0 +1,124 @@
+/* Keyframes for Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Title */
+.editInformationTitle {
+  /* animation: fadeIn 0.5s ease-out; */
+  font-size: 1.5rem;
+}
+
+/* Upper Container */
+.upperContainer {
+  height: 48%;
+  width: 100%;
+  /* border-bottom: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* animation: slideIn 0.7s ease-out; */
+}
+.upperContainer table{
+  padding: 50px 100px;
+}
+.upperContainer tr{
+  border: 1px solid black;
+  height: 5vh;
+  padding: 40px;
+}
+.editInfo .edit{
+  display: flex;
+  gap: 10px;
+}
+/* .editInfo .edit .saveBtn:hover{
+  background: blue;
+  text-decoration: underline;
+}
+.editInfo .edit .cancelBtn:hover{
+  background: red;
+  text-decoration: underline;
+} */
+.editInfo .saveButton,
+.editInfo .cancelButton{
+  padding: 0 10px;
+}
+.editInfo .saveButton:hover{
+  color: blue;
+  text-decoration: underline;
+}
+.editInfo .cancelButton:hover{
+  color: red;
+  text-decoration: underline;
+}
+
+.upperContainer td .editInfo{
+  display: inline-flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Lower Container */
+/* .lowerContainer {
+  height: 48%;
+  width: 100%;
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* animation: slideIn 0.7s ease-out; 
+} */
+
+/* Row Styling
+.firstRow,
+.secondRow,
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  /* animation: fadeIn 0.8s ease-out; 
+} */
+
+/* Row Cell Styling */
+/* .firstRow > div,
+.secondRow > div,
+.bottomRow > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 1px solid black;
+  border-collapse: collapse; */
+  /* animation: fadeIn 0.8s ease-in; */
+  /* transition: background-color 0.3s ease, transform 0.3s ease;} */
+
+
+/* Hover Effects for Row Cells */
+/* .firstRow > div:hover,
+.secondRow > div:hover,
+.bottomRow > div:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+} */
+
+
+.editInfo span{
+  font-weight: 400;
+}

@@ -1,0 +1,106 @@
+/* .RoomManagementContainer{
+    border: 2px solid black;
+} */
+.formFunctions{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.formFunctions input[type=text], 
+.formFunctions input[type=number],
+.formFunctions input[type=date],
+.formFunctions input[type=time]{
+    border-bottom: 3px solid #32cd32;
+    padding: 5px 10px;
+    background: transparent;
+}
+.formFunctions input[type=text]:focus, 
+.formFunctions input[type=number]:focus,
+.formFunctions input[type=date]:focus, 
+.formFunctions input[type=time]:focus{
+    outline: none;
+}
+.formFunctions .btnAdd, .formFunctions .btnSearch{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.formFunctions .btnAdd:hover, 
+.formFunctions .btnSearch:hover{
+    background: #e2e2e2;
+}
+.cardsEdit{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cardsEdit input[type=text], 
+.cardsEdit input[type=number],
+.cardsEdit input[type=date],
+.cardsEdit input[type=time]{
+    border: 2px solid black;
+    padding: 0 10px;
+}
+.btnsCardsEdit{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: underline;
+}
+.btnsCardsEdit #btnCardsEditSave:hover{
+    color: blue;
+}
+.btnsCardsEdit #btnCardsEditCancel:hover{
+    color: red;
+}
+.cardsGrid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    padding: 20px 10px 10px 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 50vh;
+}
+.Cards{
+    background: #fff;
+    border-bottom: 3px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.Cards .btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.Cards .btns .btnEdit{
+    width: 100%;
+    background: #4caf50;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #f2f2f2;
+}
+.Cards .btns .btnDelete{
+    width: 100%;
+    background: #ff1a1a;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #f2f2f2;
+}
+.Cards .btns .btnEdit:hover{
+    background: #3c943f;
+}
+.Cards .btns .btnDelete:hover{
+    background: #d41212;
+}
+.cardsGrid .btnMore .btn{
+    border: 2px solid black;
+    padding: 5px 10px;
+}

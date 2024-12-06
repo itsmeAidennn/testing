@@ -1,0 +1,152 @@
+.manageExamContainer{
+    background: #f2f2f2;
+    height: 100vh;
+    padding: 20px 200px;
+}
+.manageExamContainer h1{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 20px;
+}
+.manageExamBox{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.manageExamFilter{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+.manageExamFilter .leftWrapper{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    gap: 10px;
+}
+.manageExamFilter .leftWrapper input[type=text],
+.manageExamFilter .leftWrapper input[type=date]{
+    width: 100%;
+    border: 2px solid gray;
+}
+.manageExamFilter .rightWrapper{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+.manageExamFilter .rightWrapper .label{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.manageExamFilter .rightWrapper input[type=time]{
+    width: 100%;
+    border: 2px solid gray;
+}
+.lowerBoxContainer{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    padding: 10px;
+    overflow: auto;
+    overflow-y: scroll;
+    max-height: 65vh;
+}
+.lowerBoxContainer .schedCards{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.lowerBoxContainer .schedCards .cardDeletebtn{
+    padding: 5px 20px;
+    background: #ff1a1a;
+    color: #f2f2f2;
+    border-radius: 5px;
+}
+.lowerBoxContainer .schedCards .cardDeletebtn:hover{
+    background: #d41212;
+}
+
+/* Modal Style */
+.modalBox h2{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.modalBox .studentsList{
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    border: 1px solid black;
+}
+.modalBox .studentsList .studentsListBox{
+    border: 1px solid #ccc;
+}
+.modalBox .studentsList .btnRemove{
+    margin-left: 10px;
+}
+.modalBox .studentsList .btnRemove:hover{
+    color: #d41212;
+    text-decoration: underline;
+}
+/* modal delete */
+.modalDelete{
+    display: flex;
+    flex-direction: column;
+}
+.modalDelete h2{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.modalDelete .input{
+    display: flex;
+    gap: 10px;
+}
+.modalDelete .input input[type=text]{
+    border-bottom: 3px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+.modalDelete .input input[type=text]:focus{
+    outline: none;
+}
+.modalDelete .btns{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+.modalDelete .btns .ConfirmDeleteBtn{
+    width: 100%;
+    background: #4caf50;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #f2f2f2;
+}
+.modalDelete .btns .ConfirmDeleteBtn:hover{
+    background: #3c943f;
+}
+.modalDelete .btns .CancelBtn{
+    width: 100%;
+    background: #ff1a1a;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #f2f2f2;
+}
+.modalDelete .btns .CancelBtn:hover{
+    background: #d41212;
+}

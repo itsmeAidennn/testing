@@ -1,0 +1,142 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+.container {
+  height: 100%;
+  width: 100vw;
+  padding: 20px 200px;
+  background-color: #f2f2f2;
+}
+.container .containerHeader{
+  display: inline-flex;
+  gap: 10px;
+  width: 74vw;
+}
+.container .containerHeader .profileCard{
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.container .containerHeader img{
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 2px solid #32cd32;
+  transition: transform 0.3s ease-in-out;
+}
+.container .containerHeader img:hover{
+  transform: scale(1.3); 
+}
+.container .containerHeader .profile{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container .containerHeader .profile .profileName{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  width: 100%;
+}
+/* .container .containerHeader .profile .profileName a{
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  width: 100%;
+} */
+.container .containerHeader .profile .profileName p{
+  font-size: 1.3em;
+
+}
+.container .containerHeader .profile .profileName a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+.container .containerHeader .profile p:nth-child(2){
+  color: gray;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.container .containerHeader .welcomeText {
+  animation: fadeIn 0.7s ease-out;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  display: flex;
+  font-size: 1.3em;
+}
+.container .containerHeader  .totalApplicants{
+  font-size: 1.2em;
+  border-radius: 10px;
+  padding: 20px;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.7s ease-out;
+  transition: all 0.4s ease-in-out;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.graphs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 74vw;
+}
+
+.chart {
+  font-weight: 600;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.chart:first-child {
+  grid-column: span 2; 
+}
+.chart:last-child {
+  grid-column: span 2;
+}
+
+.chart:hover {
+  transform: scale(1.05); 
+}

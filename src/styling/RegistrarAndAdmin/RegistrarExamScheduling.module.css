@@ -1,0 +1,166 @@
+.schedulingContainer{
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    height: 100vh;
+}
+.schedulingBox{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* left container */
+.schedulingContainer h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.schedulingContainer1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.schedulingContainer1 .setExamDate{
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.schedulingContainer1 .setExamDate select:focus{
+    outline: none;
+}
+.schedulingContainer1 .setExamDate .setDateList{
+    display: flex;
+    gap: 10px;
+}
+.schedulingContainer1 .setExamDate .setDateList p{
+    font-weight: 600;
+}
+.schedulingContainer1 .giveExamDate{
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.schedulingContainer1 .giveExamDate h1{
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.schedulingContainer1 .giveExamDate .giveDateList{
+    display: flex;
+    gap: 5px;
+}
+.schedulingContainer1 .giveExamDate .giveDateList p:first-of-type{
+    font-weight: 600;
+}
+.schedulingContainer1 .btnGiveSched{
+    display: flex;
+    justify-content: center;
+}
+.schedulingContainer1 .btnGiveSched .btn{
+    background: #4caf50;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: #f2f2f2;
+}
+.schedulingContainer1 .btnGiveSched .btn:hover{
+    background: #3c943f;
+}
+
+/* right container */
+.schedulingContainer2{
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.schedulingContainer2 h1{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 10px;
+}
+.schedulingContainer2 .searchWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.schedulingContainer2 .leftWrapper{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+.schedulingContainer2 .leftWrapper input[type=text]{
+    width: 100%;
+    border: 2px solid gray;
+}
+.schedulingContainer2 .rightWrapper{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+.schedulingContainer2 .rightWrapper select, 
+.schedulingContainer2 .rightWrapper input[type=date]{
+    width: 100%;
+    text-align: center;
+    border: 2px solid gray;
+}
+.schedulingContainer2 .schedulingTable {
+    width: 100%;
+    max-height: 50vh;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+    overflow-y:auto;
+    
+}
+.schedulingContainer2 .schedulingTable table{
+    width: 100%;
+}
+.schedulingContainer2 .schedulingTable th {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.schedulingContainer2 .schedulingTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.schedulingContainer2 .schedulingTable tr {
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease;
+}
+
+.schedulingContainer2 .schedulingTable tr:hover {
+    background-color: #f1f1f1;
+}
+.schedulingContainer2 #tableMore{
+    text-decoration: underline;
+    float: right;
+}
+.schedulingContainer2 #tableMore:hover{
+    color: blue;
+}

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.FeedbackSection{
+    background-color: #FBF3F3;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FeedbackSectionLogo #FeedbackSectionLogo{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-top: -10px;
+}
+.FeedbackSectionForm{
+    position: relative;
+    border-left: 2px solid black;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 230px;
+    margin-top: 150px;
+    width: 20rem;
+}
+.FeedbackSectionForm .FeedbackSectionFeedback .FeedbackSectionTitle{
+    font-family: "Inter";
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.FeedbackSectionForm .FeedbackSectionFeedback .FeedbackSectionName{
+   background: #FBF3F3;
+   padding: 10px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid black;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+.FeedbackSectionForm .FeedbackSectionFeedback .FeedbackSectionEmail{
+    background: #FBF3F3;
+    padding: 5px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+ }
+input[type="text"]{
+    padding: 0 10px;
+}
+input[type="email"]{
+    padding: 0 10px;
+}
+ .FeedbackSectionForm .FeedbackSectionFeedback .FeedbackSectionSubject{
+    background: #FBF3F3;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+ }
+ .FeedbackSectionForm .FeedbackSectionFeedback select{
+    background: #FBF3F3;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    font-family: "Inter";
+ }
+ .FeedbackSectionForm .FeedbackSectionFeedback select:focus{
+    outline: none;
+ }
+.FeedbackSectionForm .FeedbackSectionFeedback .FeedbackSectionMsg{
+    background: #FBF3F3;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+ }
+.FeedbackSectionForm .FeedbackSectionFeedback .FeedbackSectionMsg textarea{
+    background: #FBF3F3;
+    width: 100%;
+    border: none;
+    padding: 0 10px;
+    font-family: "Inter";
+ }
+.FeedbackSectionForm .FeedbackSectionFeedback .FeedbackSectionMsg textarea:focus{
+    outline: none;
+ }
+.FeedbackSectionForm .FeedbackSectionFeedback input[type=text], input[type=email]{
+    border: none;
+    background: transparent;
+    font-family: "Inter";
+ }
+.FeedbackSectionForm input:focus{
+    outline: none;
+}
+.FeedbackSectionForm .FeedbackSectionSubmit #button{
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 100%;
+    height: 35px;
+    font-family: "Inter";
+}
+.FeedbackSectionForm .FeedbackSectionSubmit #button:hover{
+    background-color: #d9d9d9;
+}
+@media screen and (max-width: 1040px) {
+    .FeedbackSection{
+        background-color: #FBF3F3;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .FeedbackSectionForm{
+        border-left: hidden;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        left: -100px;
+    }
+    .FeedbackSectionLogo #FeedbackSectionLogo{
+        opacity: 0;       
+    }
+  }

@@ -1,0 +1,129 @@
+@keyframes openChatWindow {
+  0% {
+    opacity: 0;
+    transform: translateX(100px) translateY(100px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) scale(1);
+  }
+}
+
+.openChatWindow {
+  animation: openChatWindow 0.5s ease;
+}
+
+@keyframes closeChatWindow {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100px) translateY(100px) scale(0.5);
+    /* visibility: hidden; */
+  }
+}
+
+.closeChatWindow {
+  animation: closeChatWindow 0.5s ease forwards;
+  /* overflow: hidden;
+  display: none; */
+}
+
+@keyframes userMessagePopIn {
+  0% {
+    opacity: 0;
+    transform: translateX(20px) translateY(20px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) scale(1);
+  }
+}
+
+.userMessagePopIn {
+  animation: userMessagePopIn 0.5s;
+}
+
+@keyframes botMessagePopIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px) translateY(20px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) scale(1);
+  }
+}
+
+.botMessagePopIn {
+  animation: botMessagePopIn 0.5s;
+}
+
+#chatWindow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#chatbotHeader {
+  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: rgb(22 163 74);
+}
+
+#messagesBox {
+  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: #E8F7DD;
+}
+
+#chatBox{
+  box-shadow: rgba(10, 37, 64, 0.35) 0px 0px 6px 0px inset;
+  background-color: rgb(22 163 74);
+}
+
+#inputText {
+  background-color: #E8F7DD;
+}
+
+#sendButton {
+  background: #4CA771;
+  border: 1px solid #1A5953;
+  
+}
+
+#sendButton:hover {
+  background-color: #66B539;
+}
+
+@keyframes slideLeftIn {
+  0% {
+    opacity:0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity:1;
+    transform: translateX(0px);
+  }
+}
+
+.slideLeftIn {
+  animation: slideLeftIn 2s 2s ease backwards;
+}
+
+.chatbotIcon {
+  background: #12413c;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 10vh;
+  width: 10vw;
+  gap: 5px;
+  letter-spacing: 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.chatbotIcon:hover {
+  background: #061615;
+}
+
+.hidden {
+  display: none;
+}

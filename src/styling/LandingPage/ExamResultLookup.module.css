@@ -1,0 +1,41 @@
+/* p, h1, button {
+    color: White;
+} */
+
+
+
+.examResultContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+.examResultContainer .form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.examResultContainer .form input[type="text"]{
+    padding: 5px;
+}
+.examResultContainer .form .button{
+    width: 100%;
+    border: 1px solid beige;
+    border-radius: 5px;
+    padding: 5px;
+}
+.examResultContainer .form .button:hover{
+    background: #f2f2f223;
+}
+.examResultContainer h1,
+.examResultContainer .result h2{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.examResultContainer .result{
+    border: 2px solid beige;
+    padding: 20px;
+}
