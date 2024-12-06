@@ -127,17 +127,49 @@
 .hidden {
   display: none;
 }
-.chatbotToggle {
-  position:fixed;
-  bottom: 0.75rem;
-  right: 0px;
-  margin-bottom: 1rem;
+.chatContainer{
+  position: fixed;
+  bottom: 5rem;
+  right: 2rem;
+  width: 24rem;
 }
-.chatBox{
-  color: white;
-  padding: 0.7rem 1rem;
-  transition-duration: 300ms;
-  border-radius: 0.375rem;
-  display: flex;
-  align-items: center;
+/* styles.module.css */
+.chatWindow {
+  background-color: white; /* Tailwind's bg-white */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Tailwind's shadow-md */
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  max-width: 32rem; /* Tailwind's max-w-lg */
+  width: 100%; /* Tailwind's w-full */
 }
+/* styles.module.css */
+.chatbotHeader {
+  padding: 1rem; /* Tailwind's p-4 */
+  border-bottom: 1px solid #e5e7eb; /* Tailwind's border-b */
+  color: white; /* Tailwind's text-white */
+  border-top-left-radius: 0.5rem; /* Tailwind's rounded-t-lg */
+  border-top-right-radius: 0.5rem;
+  display: flex; /* Tailwind's flex */
+  justify-content: space-between; /* Tailwind's justify-between */
+  align-items: center; /* Tailwind's items-center */
+}
+/* styles.module.css */
+#closeChat {
+  color: rgba(255, 255, 255, 0.7); /* Tailwind's text-white-300 */
+  transition: color 0.2s ease-in-out; /* Smooth hover/focus transition */
+}
+
+#closeChat:hover {
+  color: #9ca3af; /* Tailwind's hover:text-gray-400 */
+}
+
+#closeChat:focus {
+  outline: none; /* Tailwind's focus:outline-none */
+  color: #9ca3af; /* Tailwind's focus:text-gray-400 */
+}
+/* styles.module.css */
+#chatBox {
+  padding: 1rem; /* Tailwind's p-4 */
+  border-top: 1px solid #e5e7eb; /* Tailwind's border-t */
+  display: flex; /* Tailwind's flex */
+}
+
