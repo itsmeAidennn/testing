@@ -23,7 +23,7 @@ const Header = ({ startAnimation }) => {
       <div className={`${nav ? style.menuMobile : 'fixed left-[-100%]'}`}>
         <ul>
           <li>
-            <a id={`${style.navigationLinks}`} href="#">Home</a>
+            <a id={`${style.navigationLinks}`} href="#">Harvingot</a>
           </li>
           <li>
             <a id={`${style.navigationLinks}`} href="#">About</a>
