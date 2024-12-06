@@ -16,14 +16,14 @@ const Header = ({ startAnimation }) => {
       <a className={style.navigationLinks} href="#">Services</a>
       <a className={style.navigationLinks} href="#">Message Us</a>
 
-      <div onClick={handleNav} className="block md:hidden">
+      {/* <div onClick={handleNav} className="block md:hidden">
         <img src={menu} alt="menu" className={style.menuIcon} />
       </div>
 
       <div className={`${nav ? style.menuMobile : 'fixed left-[-100%]'}`}>
         <ul>
           <li>
-            <a id={`${style.navigationLinks}`} href="#">Harvingot</a>
+            <a id={`${style.navigationLinks}`} href="#">Home</a>
           </li>
           <li>
             <a id={`${style.navigationLinks}`} href="#">About</a>
@@ -35,7 +35,7 @@ const Header = ({ startAnimation }) => {
             <a id={`${style.navigationLinks}`} href="#">Message Us</a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   )
 }
