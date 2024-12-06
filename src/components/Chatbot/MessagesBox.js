@@ -1,7 +1,6 @@
 import {useEffect} from 'react';
 import style from '../../styling/Chatbot.module.css'
 
-
 const MessagesBox = ({chat}) => {
   useEffect(() => {
     console.log("Called");
@@ -13,14 +12,14 @@ const MessagesBox = ({chat}) => {
   const RenderedContent = (user) => {
     if(user.msg){
       return(
-        <p className={style.botMessagePopIn} >
+        <p className={`${style.botMessagePopIn}`}>
           {user.msg}
         </p>
       )
     }
     if(user.img){
       return(
-        <img className={`${style.messageContainer} ${style.botMessagePopIn}`} src={user.img} alt="Sent an image."></img>
+        <img className={`${style.botMessagePopIn} ${style.botMessagePopIn}`} src={user.img} alt="Sent an image."></img>
       )
     }
   }
