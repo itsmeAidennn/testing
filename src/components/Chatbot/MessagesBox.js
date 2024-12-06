@@ -1,4 +1,6 @@
 import {useEffect} from 'react';
+import style from '../../styling/Chatbot.module.css'
+
 
 const MessagesBox = ({chat}) => {
   useEffect(() => {
