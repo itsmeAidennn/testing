@@ -7,7 +7,7 @@ const ProtectedRoute = ({ children }) => {
   useEffect(() => {
     const checkSessionStatus = async () => {
       try{
-        const response = await fetch('/api/sessionChecker', {
+        const response = await fetch('https://testing-aq6s.onrender.com/api/sessionChecker', {
           method: 'POST',
           credentials: 'include',
         })
